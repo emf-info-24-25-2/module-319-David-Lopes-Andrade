@@ -7,6 +7,7 @@ public class ExerciceSwitch1 {
         else if (noteDuModule <=2) System.out.println("trés insuffisant");
         else if (noteDuModule <=3) System.out.println("Insuffisant");
         else if (noteDuModule <=4)System.out.println("suffisant");
-        
+        else if (noteDuModule <=5)System.out.println("pas mal");
+        else if (noteDuModule <=6)System.out.println("parfait");
     }
 }
