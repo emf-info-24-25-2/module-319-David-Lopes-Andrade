@@ -21,9 +21,12 @@ public class ExerciceSwitch2 {
         System.out.println("Minime");
                     break;
             case 11:
-        System.out.println("Pupille");
+        System.out.println("Minime");
                     break;
-           
+           default:
+           System.out.println("inconnu");
+            
+            break;
    
                         
 
