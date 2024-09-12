@@ -9,22 +9,23 @@ public class ExerciceSwitch2 {
             System.out.println("Poussin");
               break;  
         
-        case 8:
+            case 8:
         System.out.println("Pupille");                    
                     break;
         
-        case 9:
+            case 9:
         System.out.println("Pupille");
+                    break;
                     
-        case 10:
+            case 10:
         System.out.println("Minime");
-        case 11:
+                    break;
+            case 11:
         System.out.println("Pupille");
-
-        System.out.println("inconnu");        
-                        break;
-
-          
+                    break;
+           
+   
+                        
 
                 }
                 
