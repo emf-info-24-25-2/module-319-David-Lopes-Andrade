@@ -19,7 +19,7 @@ public class ExerciceBoucles1 {
             Numero +=1;
             System.out.println("je sais compter jusqu'a "+Numero);
             
-        }while (Numero <5); 
+        }while (Numero <5);
                 
             
         
