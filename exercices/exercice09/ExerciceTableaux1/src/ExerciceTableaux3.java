@@ -1,24 +1,31 @@
 import java.util.Arrays;
+import java.util.Random;
 
 public class ExerciceTableaux3 {
+    public static final int MAX = 6;
+    public static final int MIN = 1;
     public static void main(String[] args) {
         
-        int[] MonTableaux = new int[] {1,5,5,4,6,3,1,5,6,4};
-        double total = 0;
+
+        Random rand = new Random();
+        
+        int[] MonTableaux = new int[10] ;
+        int total = 0;
+        
 
 
 
         Arrays.toString(MonTableaux);
         for (int i = 0; i < MonTableaux.length; i++) {
+            MonTableaux[i]=rand.nextInt(MAX-MIN+1)+MIN;
             total = total + MonTableaux[i];
         }
-        double moyenne = total / MonTableaux.length;
         
-        System.out.format("La moyenne est: %.2f", moyenne);
-            
+        double moyenne = total / MonTableaux.length;
+        for (int i = 0; i<MonTableaux.length; i++) {
+            System.out.println("celule "+ i +":"+ MonTableaux[i] );
+        }
 
-
-
-    
-    
+        System.out.format("La moyenne est: "+ moyenne);
+        
     }}
