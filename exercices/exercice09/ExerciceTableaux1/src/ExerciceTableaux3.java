@@ -10,12 +10,12 @@ public class ExerciceTableaux3 {
         Random rand = new Random();
         
         int[] MonTableaux = new int[10] ;
-        int total = 0;
+        double total = 0;
         
 
 
 
-        Arrays.toString(MonTableaux);
+        
         for (int i = 0; i < MonTableaux.length; i++) {
             MonTableaux[i]=rand.nextInt(MAX-MIN+1)+MIN;
             total = total + MonTableaux[i];
