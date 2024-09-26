@@ -10,18 +10,18 @@ public class Devoirs03
         // Déclaration des variables
         int jour, mois, annee;
         
-        // Scanner pour saisir la date
-        Scanner sc = new Scanner(System.in);
+        try (// Scanner pour saisir la date
+        Scanner sc = new Scanner(System.in)) {
+            // Demander l'entrée de l'utilisateur pour la date
+            System.out.print("Entrez le jour : ");
+            jour = sc.nextInt();
 
-        // Demander l'entrée de l'utilisateur pour la date
-        System.out.print("Entrez le jour : ");
-        jour = sc.nextInt();
+            System.out.print("Entrez le mois : ");
+            mois = sc.nextInt();
 
-        System.out.print("Entrez le mois : ");
-        mois = sc.nextInt();
-
-        System.out.print("Entrez l'année : ");
-        annee = sc.nextInt();
+            System.out.print("Entrez l'année : ");
+            annee = sc.nextInt();
+        }
 
         // Variable pour stocker le numéro du jour de l'année
         int numJour = 0;
