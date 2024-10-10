@@ -9,6 +9,6 @@ public class ExerciceCondition1 {
     else if(valeurATester < 0) {
         System.out.println("La valeur est negative");
     }
+    System.out.println(11%6);
     }
-}
-}
+}}
