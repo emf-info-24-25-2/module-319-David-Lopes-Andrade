@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Devoirs03 {
 
     public static void main(String[] args) {
-        // Déclaration des variables
+       
         int jour, mois, annee;
 
-        try (// Scanner pour saisir la date
+        try (
                 Scanner sc = new Scanner(System.in)) {
-            // Demander l'entrée de l'utilisateur pour la date
+          
             System.out.print("Entrez le jour : ");
             jour = sc.nextInt();
 
@@ -21,13 +21,13 @@ public class Devoirs03 {
             annee = sc.nextInt();
         }
 
-        // Variable pour stocker le numéro du jour de l'année
+       
         int numJour = 0;
 
-        // Tableau contenant le nombre de jours dans chaque mois (année non bissextile)
+       
         int[] joursParMois = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        // Vérifier si l'année est bissextile
+       
         boolean bissextile = false;
 
         if (annee % 4 == 0) {
@@ -40,12 +40,12 @@ public class Devoirs03 {
             }
         }
 
-        // Ajustement pour février si l'année est bissextile
+      
         if (bissextile) {
-            joursParMois[1] = 29; // Février a 29 jours dans une année bissextile
+            joursParMois[1] = 29; 
         }
 
-        // Calculer le numéro du jour dans l'année
+     
         switch (mois) {
             case 1:
                 numJour = jour;
@@ -97,7 +97,7 @@ public class Devoirs03 {
                 return;
         }
 
-        // Afficher le résultat
+        
         System.out.println("Nous sommes le jour N°" + numJour + " de l'année.");
     }
 }
