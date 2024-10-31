@@ -8,6 +8,7 @@ public class TableauOperations {
     public static int[] creerTableau(int taille) {
         return new int[taille];
     }
+
     // 2. Remplir un tableau avec une valeur fixe
     public static int[] remplirAvecValeur(int[] tableau, int valeurFixe) {
         for (int i = 0; i < tableau.length; i++) {
@@ -15,6 +16,7 @@ public class TableauOperations {
         }
         return tableau;
     }
+
     // 3. Remplir un tableau avec des valeurs aléatoires
     public static int[] remplirAvecAleatoire(int[] tableau) {
         Random random = new Random();
