@@ -24,8 +24,7 @@ public class Structogramme {
                             return;  // Quitter l'attaque dès que le mot de passe est trouvé
                         }
         
-                        // Optionnel : afficher chaque tentative (ceci est lent pour des grandes combinaisons)
-                        // System.out.println("Test en cours : " + combinaison);
+                        
                     }
                 }
         
