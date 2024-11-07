@@ -117,7 +117,7 @@ public class TableauOperations {
 
     // Méthode main pour tester
     public static void main(String[] args) {
-        int taille = 50;
+        int taille = 5;
         int[] tableau = creerTableau(taille);
         tableau = remplirAvecAleatoire(tableau);
 
@@ -141,8 +141,8 @@ public class TableauOperations {
         System.out.println("La moyenne des cellules du tableau = " + String.format("%.2f", moyenne));
 
         int positionPremiere = premiereOccurrence(tableau, 13);
-        int positionDerniere = derniereOccurrence(tableau, 13);
+        int positionDerniere = derniereOccurrence(tableau, 8);
         System.out.println("La valeur 13 a été trouvée à la 1ère position N°" + positionPremiere);
-        System.out.println("La valeur 13 a été trouvée à la dernière position N°" + positionDerniere);
+        System.out.println("La valeur 8 a été trouvée à la dernière position N°" + positionDerniere);
     }
 }
