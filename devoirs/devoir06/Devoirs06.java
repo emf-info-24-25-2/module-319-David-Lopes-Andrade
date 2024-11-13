@@ -24,6 +24,7 @@ public class Devoirs06 {
     }
     
     public static void main(String[] args) {
+        //je pense que vous arrivez à faire un peu plus que ça :-)
 
     }
 
