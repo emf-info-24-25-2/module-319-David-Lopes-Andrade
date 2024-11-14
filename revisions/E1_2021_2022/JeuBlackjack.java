@@ -1,5 +1,5 @@
 package revisions.E1_2021_2022;
-
+//j'ai rien compris a tout le code meme avec chatgpt qui m'explique et moi qui essaye de comprendre
 public class JeuBlackjack {
 
     // Déclaration des constantes MIN et MAX
@@ -67,19 +67,24 @@ public class JeuBlackjack {
     public static String donnerNomCarte(int carte) {
         if (carte >= 2 && carte <= 10) {
             return String.valueOf(carte);  // Si la carte est entre 2 et 10, retourne la valeur nominale
+            
         }
         switch (carte) {
+            
             case 11:
-                return "valet";
+                 String valeurCarte = "valet";
             case 12:
-                return "dame";
+                valeurCarte="dame";
             case 13:
-                return "roi";
+                valeurCarte ="roi";
             case 14:
-                return "as";
+                valeurCarte="as";
             default:
-                return "indéterminé";  // Si la carte ne correspond à aucune valeur attendue
+                valeurCarte= "indéterminé";  // Si la carte ne correspond à aucune valeur attendue
+                return valeurCarte;
+                
         }
+        
     }
 
     // 4. Méthode determinerIndexGagnant() : détermine l'index du joueur gagnant
