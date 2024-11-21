@@ -1,4 +1,4 @@
-package revisions.E1_2020_2021;
+package revisions.E2_2022_2023;
 
 import java.util.Scanner;
 
