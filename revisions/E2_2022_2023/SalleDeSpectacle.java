@@ -1,5 +1,5 @@
 package revisions.E2_2022_2023;
-
+//j'avais deja fait cet exercice mais je l'ai refait en meme temp pour voir ou j'avais des difficultés
 import java.util.Scanner;
 
 public class SalleDeSpectacle {
@@ -84,7 +84,8 @@ public class SalleDeSpectacle {
                 return i; // Retourne l'index de la première place libre
             }
         }
-        return -1; // Retourne -1 si aucune place libre n'est trouvée
+        ; // Retourne -1 si aucune place libre n'est trouvée
+        return categorie;
     }
 
     // Méthode pour commander un billet
