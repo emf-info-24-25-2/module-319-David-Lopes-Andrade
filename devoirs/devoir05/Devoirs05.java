@@ -25,6 +25,7 @@ public class Devoirs05 {
 
                 System.out.println("Trop grand !");
             } else {
+                System.out.println("Bravo tu as trouvé!");
             //RIF: ajoutez un petit message de félicitation pour la fin du jeu. Pensez aussi à compter le nombre d'essais
             }
         } while (valeur != nombreMystere);

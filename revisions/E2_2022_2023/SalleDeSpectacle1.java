@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 //j'avais deja fait l'exercice, donc je l'ai refait pour voir ou j'avais plus de peine
 public class SalleDeSpectacle1 {
-    static final int PRIX_CATEGORIE_UN = 25;
-    static final int PRIX_CATEGORIE_DEUX = 18;
-    static final int PRIX_CATEGORIE_TROIS = 12;
-    static final int[] CATEGORIE_SALLE = { 3, 3, 2, 2, 1, 1, 2, 2, 3, 3 };
+   public static final int PRIX_CATEGORIE_UN = 25;
+   public static final int PRIX_CATEGORIE_DEUX = 18;
+   public static final int PRIX_CATEGORIE_TROIS = 12;
+   public static final int[] CATEGORIE_SALLE = { 3, 3, 2, 2, 1, 1, 2, 2, 3, 3 };
 
-    public static void main(String[] args) {// j'ai des doute quand je dois appeller les methode je suis jamais sur de
-                                            // comment faire
+    public static void main(String[] args) {// j'ai des doute quand je dois appeller les methode je suis jamais sur de comment faire
+                                           
         Scanner scanner = new Scanner(System.in);
 
         boolean[] occupationSalle = new boolean[CATEGORIE_SALLE.length];
@@ -80,8 +80,8 @@ public class SalleDeSpectacle1 {
         return -1;
     }
 
-    public static boolean[] commanderBillet(boolean[] occupationSalle) { // j'ai eu de la peine pour comprendre comment
-                                                                         // utiliser le scanner
+    public static boolean[] commanderBillet(boolean[] occupationSalle) { // j'ai eu de la peine pour comprendre comment utiliser le scanner
+                                                                         
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Quelle catégorie voulez vous ? :");

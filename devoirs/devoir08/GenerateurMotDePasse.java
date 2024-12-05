@@ -5,9 +5,9 @@ import java.util.Random;
 public class GenerateurMotDePasse {
 
     // Déclaration des constantes
-    public static final String[] CARACTERES = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
-    public static final int NBR_ESSAI = 5;
-    public static final int TAILLE_MOT_DE_PASSE = 15;
+    public static  String[] CARACTERES = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+    public static  int NBR_ESSAI = 5;
+    public static  int TAILLE_MOT_DE_PASSE = 15;
 
     // Méthode pour générer un mot de passe
     public static String genereMotDePasse(int tailleMotDePasse) {
