@@ -1,13 +1,9 @@
-package devoir10;
-
 import java.util.Random;
 
-public class MonteCarloPI {
-    // Constante : nombre d'essais
-    public static final int NBRE_ESSAIS = 100_0000000;
-
-    public static void main(String[] args) {
-        int pointsDansLeCercle = 0;
+public class App {
+    public static int NBRE_ESSAIS =10000000;
+    public static void main(String[] args) throws Exception {
+         int pointsDansLeCercle = 0;
         Random random = new Random();
 
         // Générer les points aléatoires
@@ -16,14 +12,15 @@ public class MonteCarloPI {
             double x = random.nextDouble();
             double y = random.nextDouble();
 
+            double hypothenuse =Math.sqrt(x*x+y*y);
             // Vérifier si le point est dans le cercle
-            if (x * x + y * y <= 1) {
+            if (hypothenuse <= 1) {
                 pointsDansLeCercle++;
             }
         }
 
         // Estimer la valeur de π
-        double piEstime = 4.0 * pointsDansLeCercle / NBRE_ESSAIS;
+        double piEstime = 4.0 * (double)pointsDansLeCercle / NBRE_ESSAIS;
 
         // Afficher les résultats
         System.out.println("Nombre d'essais : " + NBRE_ESSAIS);

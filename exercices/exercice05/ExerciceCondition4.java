@@ -7,7 +7,13 @@ if (temperature < -10) System.out.println("Il fait trés froid");
 else if (temperature <= -10) System.out.println("il fait froid");
 else if(0 <= temperature && temperature <= 25) System.out.println("il fait normal");
 else if(25<= temperature && temperature >=35) System.out.println("il fait trés chaud");
-
+for (int i = 0; i < 5; i++) {
+    if(i==3){
+        continue;
+       
+    }
+    System.out.println(i);
+}
 }
     
 }
